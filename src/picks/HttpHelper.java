@@ -31,7 +31,7 @@ public class HttpHelper {
                     .connect(url)
                     .header("User-Agent",
                             "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5")
-                    .header("Accept-Charset", "UTF-8,*;q=0.5")
+                    .header("Content-type", "text/html;charset=utf-8")
                     .get();
             
         } catch (IOException ex) {
