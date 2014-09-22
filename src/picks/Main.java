@@ -89,10 +89,13 @@ public class Main {
         Document appresult = HttpHelper.httpGet(url);
         if(appresult != null){
 //            System.out.println(appresult.toString());
-            if(appresult.getElementsByTag("body").toString().indexOf("5") != -1){
+            String t = appresult.getElementsByTag("body").toString();
+            if(t.indexOf("5") != -1){
                 PickImageTask pickImageTask = new PickImageTask(appModel.getImages());
                 pickImageTask.start();
-                System.out.println("done");
+                System.out.println("pickdone");
+            }else if(t.indexOf("2") != -1){
+                System.out.println("pickrepick");
             }
         }
         //*/
