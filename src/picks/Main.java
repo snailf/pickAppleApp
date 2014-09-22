@@ -79,6 +79,7 @@ public class Main {
                 "&tid=" + appModel.getTid() + 
                 "&name=" + URLEncoder.encode(appModel.getName()) + 
                 "&images=" + appModel.getImageUrl() +
+                "&download_ur=" + appModel.getUrl() +
                 "&logo=" + appModel.getApplogs()+
                 "&version=" + URLEncoder.encode(appModel.getVersionNmae())+ 
                 "&date=" + URLEncoder.encode(appModel.getVersionTime()) + 
